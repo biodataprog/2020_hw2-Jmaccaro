@@ -61,10 +61,6 @@ with gzip.open(file1,"rt") as fh:
     for value in codonS: 
         total_codonsS += codonS[value]
     
-#    print("1) There age {} genes in Salmonella".format(seqnumS))
-#    print("The total num codons in Salmonella is %d."%(total_codonsS))
-#    print("The perc GC for Salmonella is %.2f."%(100 * totGCS/tlS))        
-#    print("The total length of genes in Salmonella is {} bp.".format(tlS))
 
 with gzip.open(file2,"rt") as fh:
     pair = aspairs(fh)
